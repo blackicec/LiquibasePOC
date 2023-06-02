@@ -1,10 +1,10 @@
 version: "3.8"
 
 services:
-  api:
-    container_name: api
+  app:
+    container_name: app
     build:
-      dockerfile: ./api.Dockerfile
+      dockerfile: ./app.Dockerfile
     restart: always
     ports:
       - '8070:8081'
@@ -22,6 +22,8 @@ services:
       - '3506:3306'
     environment:
       MYSQL_ROOT_PASSWORD: test_password
+      MYSQL_USER: user
+      MYSQL_PASSWORD: test
     volumes:
       - db_storage:/var/lib/mysql
       - ./_setup/database/initialize.sql:/docker-entrypoint-initdb.d/init.sql

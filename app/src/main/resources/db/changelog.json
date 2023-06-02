@@ -89,7 +89,7 @@
     {
       "changeSet": {
         "id": "3",
-        "author": "James",
+        "author": "James P.",
         "changes": [
           {
             "addColumn": {
@@ -114,8 +114,7 @@
         "changes": [
           {
             "customChange": {
-              "class": "app.migrations.custom.M001_FixRegistrationStatus",
-              "helloTo": "world"
+              "class": "app.migrations.custom.M001_FixOrderStatus"
             }
           }
         ]

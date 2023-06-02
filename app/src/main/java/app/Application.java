@@ -15,7 +15,7 @@ public class Application {
     @SneakyThrows
     public static void main(String[] args) {
         // Giving the DB some time to get out of bed
-        Thread.sleep(5000);
+        Thread.sleep(8000);
 
         SpringApplication.run(Application.class, args);
     }

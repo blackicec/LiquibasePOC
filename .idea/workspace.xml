@@ -9,38 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58ce3c8e-5d80-41c3-8462-6bffceb869f2" name="Changes" comment="More reformatting and">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/app_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/mysql-connector-java-8.0.30.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/constants/DatabaseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/constants/DatabaseTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/controllers/SomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/migrations/seed/S001_AddInitialSeedData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="58ce3c8e-5d80-41c3-8462-6bffceb869f2" name="Changes" comment="Added the jar file to source for quick compose execution">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/app_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/app_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_setup/database/initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/_setup/database/initialize.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api.Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/app/components/MigrationBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/app/controllers/SomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app.Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixRegistrationStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/changelog.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/changelog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/lib/mysql-connector-java-8.0.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/lib/snakeyaml-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/liquibase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/liquibase.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/src/main/java/controllers/MigrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/src/main/java/migrations/m001_FixCustomerStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixRegistrationStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/src/test/java/org/example/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/app_jar/app.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/app_jar/app.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,21 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/james/Development/LiquibasePOC/api/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/james/Development/LiquibasePOC/app/src/main/java/app&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "C:/Users/james/Development/LiquibasePOC/api/src/main/java",
+    "last_opened_file_path": "C:/Users/james/Development/LiquibasePOC/app/src/main/java/app",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\james\Development\LiquibasePOC\app\src\main\java\app" />
@@ -117,6 +96,19 @@
     </configuration>
     <configuration name="All in app" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="app" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="app:jar" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="All in liquibase_test" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="liquibase_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -168,14 +160,30 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.mysql_db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql_db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Application" />
+      <item itemvalue="Docker.docker-compose.yml.mysql_db: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="JUnit.All in liquibase_test" />
       <item itemvalue="JUnit.All in app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.mysql_db: Compose Deployment" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
@@ -198,12 +206,36 @@
       <option name="project" value="LOCAL" />
       <updated>1685594668156</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="More reformatting, dependency cleanup and cleanup">
+      <created>1685677257007</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685677257007</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added customChange file examples. The seed file is up and running.">
+      <created>1685677312100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685677312100</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added the jar file to source for quick compose execution">
+      <created>1685677345191</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685677345191</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reformatted the project files and added an api. Also set up the compose file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformatted the project files and added an api. Also set up the compose file" />
+    <MESSAGE value="More reformatting, dependency cleanup and cleanup" />
+    <MESSAGE value="Added customChange file examples. The seed file is up and running." />
+    <MESSAGE value="Added the jar file to source for quick compose execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the jar file to source for quick compose execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,7 +266,7 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixRegistrationStatus.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java</url>
           <line>25</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
