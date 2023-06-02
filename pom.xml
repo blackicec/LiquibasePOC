@@ -10,8 +10,7 @@
   <name>liquibase_test</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>migrations</module>
-      <module>api</module>
+    <module>app</module>
   </modules>
 
   <properties>
@@ -31,6 +30,16 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.30</version>
+    </dependency>
+    <dependency>
+      <groupId>net.datafaker</groupId>
+      <artifactId>datafaker</artifactId>
+      <version>1.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
     </dependency>
   </dependencies>
 </project>

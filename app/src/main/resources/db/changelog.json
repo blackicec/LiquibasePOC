@@ -12,11 +12,26 @@
     {
       "changeSet": {
         "id": "1",
-        "author": "where is waldo",
+        "author": "Stacy A.",
+        "changes": [
+          {
+            "customChange": {
+              "class": "app.migrations.seed.S001_AddInitialSeedData",
+              "ordersHydrationCount": "1500",
+              "value": "Some Value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "2",
+        "author": "James P.",
         "changes": [
           {
             "createTable": {
-              "tableName": "person",
+              "tableName": "users",
               "columns": [
                 {
                   "column": {
@@ -32,16 +47,31 @@
                 {
                   "column": {
                     "name": "firstname",
-                    "type": "varchar(50)"
+                    "type": "varchar(128)",
+                    "constraints": {
+                      "nullable": false
+                    }
                   }
                 },
                 {
                   "column": {
                     "name": "lastname",
-                    "type": "varchar(50)",
+                    "type": "varchar(128)",
                     "constraints": {
                       "nullable": false
                     }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "type": "VARCHAR(256)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "city",
+                    "type": "VARCHAR(256)"
                   }
                 },
                 {
@@ -58,17 +88,17 @@
     },
     {
       "changeSet": {
-        "id": "2",
+        "id": "3",
         "author": "James",
         "changes": [
           {
             "addColumn": {
-              "tableName": "person",
+              "tableName": "users",
               "columns": [
                 {
                   "column": {
-                    "name": "username",
-                    "type": "varchar(8)"
+                    "name": "phone",
+                    "type": "varchar(32)"
                   }
                 }
               ]
@@ -79,16 +109,13 @@
     },
     {
       "changeSet": {
-        "id": "3",
-        "author": "James",
+        "id": "4",
+        "author": "Stacy A.",
         "changes": [
           {
-            "addLookupTable": {
-              "existingTableName": "person",
-              "existingColumnName": "state",
-              "newTableName": "state",
-              "newColumnName": "id",
-              "newColumnDataType": "char(2)"
+            "customChange": {
+              "class": "app.migrations.custom.M001_FixRegistrationStatus",
+              "helloTo": "world"
             }
           }
         ]

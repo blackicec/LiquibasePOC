@@ -1,20 +1,18 @@
-CREATE DATABASE IF NOT EXISTS `ExampleDB`;
+CREATE DATABASE IF NOT EXISTS `LiquibaseBuiltMe`;
 
-USE `ExampleDB`;
+USE `LiquibaseBuiltMe`;
 
-CREATE TABLE IF NOT EXISTS ReunionOrders
+CREATE TABLE IF NOT EXISTS orders
 (
     id            INT AUTO_INCREMENT PRIMARY KEY,
     firstName     VARCHAR(256)             NOT NULL,
     lastName      VARCHAR(256)             NOT NULL,
     email         VARCHAR(128)             NOT NULL,
-    squareOrderId VARCHAR(256)             NOT NULL,
-    receiptUrl    VARCHAR(256)             NULL,
     status        VARCHAR(32)              NULL,
     createDate    DATETIME DEFAULT (NOW()) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS ReunionShirtSizes
+CREATE TABLE IF NOT EXISTS shirtSizes
 (
     id       INT AUTO_INCREMENT PRIMARY KEY,
     size     VARCHAR(16)       NOT NULL,
