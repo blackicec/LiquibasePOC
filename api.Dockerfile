@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk-focal
 
-ADD api/target/api-3.0.1.jar app.jar
+ADD out/artifacts/app_jar/app.jar app.jar
 
 EXPOSE 8081
 
