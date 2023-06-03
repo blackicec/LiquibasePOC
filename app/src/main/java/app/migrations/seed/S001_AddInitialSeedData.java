@@ -2,6 +2,7 @@ package app.migrations.seed;
 
 import app.constants.DatabaseInfo;
 import app.constants.DatabaseTable;
+import app.data.models.enums.OrderStatus;
 import com.github.javafaker.Faker;
 import liquibase.change.custom.CustomTaskChange;
 import liquibase.database.Database;
@@ -24,12 +25,12 @@ public class S001_AddInitialSeedData implements CustomTaskChange {
 
     @Override
     public void execute(Database database) throws CustomChangeException {
-        final List<String> statuses = List.of("Error", "Problematic", "Success", "Processing", "Pending");
+        List<String> statuses = Arrays.stream(OrderStatus.values()).map(Enum::toString).toList();
         List<SqlStatement> statements = new ArrayList<>();
         Random rand = new Random();
         Faker faker = new Faker();
 
-        // Note: value only populates if the get method is called
+        // Note: value only populates if the get method is called at compile time
         String registrationCount = this.getOrdersHydrationCount();
 
         for(int i = 0; i < Integer.parseInt(registrationCount); i++) {

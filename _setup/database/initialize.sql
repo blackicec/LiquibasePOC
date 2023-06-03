@@ -20,3 +20,12 @@ CREATE TABLE IF NOT EXISTS shirtSizes
     `order`  INT               NOT NULL,
     isActive TINYINT DEFAULT 1 NULL
 );
+
+CREATE TABLE IF NOT EXISTS _historicals
+(
+    id              INT AUTO_INCREMENT PRIMARY KEY,
+    tableName       VARCHAR(128) NOT NULL,
+    migrationClass  VARCHAR(128) NOT NULL,
+    data            JSON NOT NULL,
+    createDate      DATETIME DEFAULT (NOW()) NOT NULL
+)
