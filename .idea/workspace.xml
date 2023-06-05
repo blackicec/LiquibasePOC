@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58ce3c8e-5d80-41c3-8462-6bffceb869f2" name="Changes" comment="Figured out how to use liquibase to get data from DB" />
+    <list default="true" id="58ce3c8e-5d80-41c3-8462-6bffceb869f2" name="Changes" comment="Removed some unused code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685933039608</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Removed some unused code">
+      <created>1685936322968</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685936322968</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Removed some unused code">
+      <created>1685936354592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685936354592</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -249,7 +263,8 @@
     <MESSAGE value="Updated config files and fixed an issue with the jar file not running in docker" />
     <MESSAGE value="Tried to set up usage of JPA in liquibase. Fail" />
     <MESSAGE value="Figured out how to use liquibase to get data from DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Figured out how to use liquibase to get data from DB" />
+    <MESSAGE value="Removed some unused code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed some unused code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
