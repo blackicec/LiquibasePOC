@@ -9,17 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58ce3c8e-5d80-41c3-8462-6bffceb869f2" name="Changes" comment="Updated config files and fixed an issue with the jar file not running in docker">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/data/models/OrdersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/data/models/enums/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/data/repositories/OrdersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/services/BeanGenerator.java" afterDir="false" />
+    <list default="true" id="58ce3c8e-5d80-41c3-8462-6bffceb869f2" name="Changes" comment="Tried to set up usage of JPA in liquibase. Fail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_setup/database/initialize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/_setup/database/initialize.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/constants/DatabaseTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/constants/DatabaseTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/data/models/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/data/models/OrdersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/data/repositories/OrdersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/data/repositories/OrdersRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/migrations/seed/S001_AddInitialSeedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/migrations/seed/S001_AddInitialSeedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/services/BeanGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/target/app-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/app-3.0.1.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685729705304</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tried to set up usage of JPA in liquibase. Fail">
+      <created>1685766468003</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685766468003</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -245,7 +248,8 @@
     <MESSAGE value="Added customChange file examples. The seed file is up and running." />
     <MESSAGE value="Added the jar file to source for quick compose execution" />
     <MESSAGE value="Updated config files and fixed an issue with the jar file not running in docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated config files and fixed an issue with the jar file not running in docker" />
+    <MESSAGE value="Tried to set up usage of JPA in liquibase. Fail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tried to set up usage of JPA in liquibase. Fail" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -277,23 +281,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java</url>
-          <line>77</line>
+          <line>82</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java</url>
-          <line>57</line>
+          <line>79</line>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/app/services/BeanGenerator.java</url>
@@ -304,6 +298,16 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/app/services/BeanGenerator.java</url>
           <line>18</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/migrations/custom/M001_FixOrderStatus.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

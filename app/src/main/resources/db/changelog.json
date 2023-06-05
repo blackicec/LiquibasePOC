@@ -12,7 +12,7 @@
     {
       "changeSet": {
         "id": "1",
-        "author": "Stacy A.",
+        "author": "James Powell",
         "changes": [
           {
             "customChange": {
@@ -27,7 +27,7 @@
     {
       "changeSet": {
         "id": "2",
-        "author": "James P.",
+        "author": "Jane Smith",
         "changes": [
           {
             "createTable": {
@@ -89,7 +89,7 @@
     {
       "changeSet": {
         "id": "3",
-        "author": "James P.",
+        "author": "James Powell",
         "changes": [
           {
             "addColumn": {
@@ -110,7 +110,7 @@
     {
       "changeSet": {
         "id": "4",
-        "author": "Stacy A.",
+        "author": "John Smith",
         "changes": [
           {
             "customChange": {

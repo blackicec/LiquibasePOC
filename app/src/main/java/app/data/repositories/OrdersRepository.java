@@ -8,5 +8,4 @@ import java.util.List;
 
 @Repository
 public interface OrdersRepository extends JpaRepository<OrdersDao, Integer> {
-    List<OrdersDao> findAllWhereStatusIn(List<String> statusList);
 }

@@ -29,5 +29,6 @@ public class OrdersDao {
     public String email;
 
     @Column
+    @Enumerated(EnumType.STRING)
     public OrderStatus status;
 }
