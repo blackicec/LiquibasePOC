@@ -12,15 +12,6 @@ CREATE TABLE IF NOT EXISTS orders
     createDate    DATETIME DEFAULT (NOW()) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS shirtSizes
-(
-    id       INT AUTO_INCREMENT PRIMARY KEY,
-    size     VARCHAR(16)       NOT NULL,
-    category VARCHAR(16)       NOT NULL,
-    `order`  INT               NOT NULL,
-    isActive TINYINT DEFAULT 1 NULL
-);
-
 CREATE TABLE IF NOT EXISTS _historicals
 (
     id              INT AUTO_INCREMENT PRIMARY KEY,
