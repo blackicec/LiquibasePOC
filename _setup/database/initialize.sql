@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS orders
     createDate    DATETIME DEFAULT (NOW()) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS _historicals
+CREATE TABLE IF NOT EXISTS _historical
 (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     tableName       VARCHAR(128) NOT NULL,

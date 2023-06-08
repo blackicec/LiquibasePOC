@@ -10,6 +10,7 @@ services:
       - '8070:8081'
     environment:
       spring.datasource.url: jdbc:mysql://liquibase-db:3306/LiquibaseBuiltMe
+      spring.liquibase.contexts: prod,seed
     networks:
       - the_royal_network
   mysql_db:

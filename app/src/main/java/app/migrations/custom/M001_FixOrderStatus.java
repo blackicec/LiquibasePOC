@@ -52,7 +52,7 @@ public class M001_FixOrderStatus implements CustomTaskChange, CustomTaskRollback
                 int orderId = result.getInt("id");
                 String oldOrderStatus = result.getNString("status");
 
-                InsertStatement insertStatement = new InsertStatement(DatabaseInfo.CatalogName, DatabaseInfo.Schema, DatabaseTable.Historicals);
+                InsertStatement insertStatement = new InsertStatement(DatabaseInfo.CatalogName, DatabaseInfo.Schema, DatabaseTable.Historical);
                 HistoricOrder historicOrder = new HistoricOrder(orderId, oldOrderStatus);
 
                 insertStatement.addColumnValue("tableName", DatabaseTable.Orders);
@@ -113,7 +113,7 @@ public class M001_FixOrderStatus implements CustomTaskChange, CustomTaskRollback
 
     @AllArgsConstructor
     private class HistoricOrder {
-        public int Id;
+        public int id;
         public String status;
     }
 }
