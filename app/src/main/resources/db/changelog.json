@@ -13,12 +13,74 @@
       "changeSet": {
         "id": "1",
         "author": "James Powell",
+        "contextFilter": "seed",
+        "changes": [
+          {
+            "customChange": {
+              "class": "app.migrations.seed.S001_AddInitialSeedData",
+              "ordersHydrationCount": "500"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "1.test_only",
+        "author": "James Powell",
+        "contextFilter": "stage",
         "changes": [
           {
             "customChange": {
               "class": "app.migrations.seed.S001_AddInitialSeedData",
               "ordersHydrationCount": "1500",
-              "value": "Some Value"
+              "note": "This should only run for the test environment"
+            }
+          },
+          {
+            "createTable": {
+              "tableName": "test_only_table",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "int",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "title",
+                    "type": "VARCHAR(128)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "tableName": "test_only_table",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": "1"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "title",
+                    "value": "Liquibase 0.8 Released"
+                  }
+                }
+              ]
             }
           }
         ]
@@ -28,6 +90,7 @@
       "changeSet": {
         "id": "2",
         "author": "Jane Smith",
+        "contextFilter": "dev,bse",
         "changes": [
           {
             "createTable": {
@@ -90,6 +153,7 @@
       "changeSet": {
         "id": "3",
         "author": "James Powell",
+        "contextFilter": "dev,bse",
         "changes": [
           {
             "addColumn": {
@@ -111,6 +175,7 @@
       "changeSet": {
         "id": "4",
         "author": "John Smith",
+        "contextFilter": "bse,stage",
         "changes": [
           {
             "customChange": {
