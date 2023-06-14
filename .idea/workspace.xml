@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58ce3c8e-5d80-41c3-8462-6bffceb869f2" name="Changes" comment="Reduced the timeout for application startup">
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/app_jar/app.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/views/orders_with_domain-V1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/views/orders_with_domain-V2.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/liquibase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/liquibase.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/target/app-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/app-3.0.1.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_directory_selection": "C:/Users/james/Development/LiquibasePOC/api/src/main/java",
-    "last_opened_file_path": "C:/Users/james/Development/LiquibasePOC",
+    "last_opened_file_path": "C:/Users/james/Development/LiquibasePOC/app/src/main/resources/db/views",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -58,11 +57,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\james\Development\LiquibasePOC\app\src\main\resources\db\views" />
       <recent name="C:\Users\james\Development\LiquibasePOC" />
       <recent name="C:\Users\james\Development\LiquibasePOC\app\src\main\java\app" />
       <recent name="C:\Users\james\Development\LiquibasePOC\api\src\main\resources" />
       <recent name="$PROJECT_DIR$/migrations" />
-      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\james\Development\LiquibasePOC\app" />

@@ -1,7 +1,5 @@
-<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
     <preConditions>
         <runningAs username="root" />
     </preConditions>
@@ -32,7 +30,11 @@
             <column name="title" value="Liquibase 4.1.0 Released"/>
         </insert>
     </changeSet>
-    <changeSet id="2" author="Jane Smith" context="bse,dev">
+    <changeSet id="2" author="James Powell" context="bse,dev">
+        <!-- Create a view for order email address containing a gmail domain -->
+        <sqlFile path="db/views/orders_with_domain-V1.sql" dbms="mysql" endDelimiter=";" />
+    </changeSet>
+    <changeSet id="3" author="Jane Smith" context="bse,dev">
         <createTable tableName="users">
             <column name="id" type="INT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false" />
@@ -54,16 +56,23 @@
             </column>
         </createTable>
     </changeSet>
-    <changeSet id="3" author="John Smith" context="bse,dev">
+    <changeSet id="4" author="John Smith" context="bse,dev">
         <addColumn tableName="users">
             <column name="phone" afterColumn="email" type="VARCHAR(32)"/>
         </addColumn>
     </changeSet>
-    <changeSet id="4" author="John Smith" context="bse,stage">
+    <changeSet id="5" author="John Smith" context="bse,stage">
         <customChange class="app.migrations.custom.M001_FixOrderStatus"/>
-        <createView viewName="usersView" replaceIfExists="true">
+        <createView viewName="v_users" replaceIfExists="true" >
             SELECT firstName, lastname, email
             FROM users
         </createView>
     </changeSet>
+    <changeSet id="6" author="James Powell" context="bse,dev">
+        <!-- Update a view changing the email address to the yahoo domain -->
+        <sqlFile path="db/views/orders_with_domain-V2.sql" dbms="mysql" endDelimiter=";" />
+    </changeSet>
 </databaseChangeLog>
+
+<!-- TODO: Break up table and view manipulation into separate changelogs and use <includeAll>; Leave seed logic in here. -->
+<!-- TODO: After break out, update IDs to favor changelog category. Ex. Views -> v_001, ... v_157, Table -> t_003, -->
