@@ -32,7 +32,8 @@
     </changeSet>
     <changeSet id="2" author="James Powell" context="bse,dev">
         <!-- Create a view for order email address containing a gmail domain -->
-        <sqlFile path="db/views/orders_with_domain-V1.sql" dbms="mysql" endDelimiter=";" />
+        <dropView viewName="v_orders_with_domain" ifExists="true" />
+        <sqlFile path="db/views/create_orders_with_domain-V1.sql" dbms="mysql" endDelimiter=";" />
     </changeSet>
     <changeSet id="3" author="Jane Smith" context="bse,dev">
         <createTable tableName="users">
@@ -70,7 +71,8 @@
     </changeSet>
     <changeSet id="6" author="James Powell" context="bse,dev">
         <!-- Update a view changing the email address to the yahoo domain -->
-        <sqlFile path="db/views/orders_with_domain-V2.sql" dbms="mysql" endDelimiter=";" />
+        <dropView viewName="v_orders_with_domain" ifExists="true" />
+        <sqlFile path="db/views/create_orders_with_domain-V2.sql" endDelimiter=";" />
     </changeSet>
 </databaseChangeLog>
 

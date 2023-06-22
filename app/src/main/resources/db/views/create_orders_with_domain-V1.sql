@@ -1,4 +1,3 @@
-DROP VIEW IF EXISTS LiquibaseBuiltMe.v_orders_with_domain;
 CREATE VIEW LiquibaseBuiltMe.v_orders_with_domain
 AS
     SELECT
@@ -7,4 +6,4 @@ AS
         o.lastName,
         o.email
     FROM orders o
-    WHERE o.email like '%yahoo.com';
+    WHERE o.email like '%gmail.com'
